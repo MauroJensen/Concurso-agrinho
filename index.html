@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTech - Simulador Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showPage('simulador')">Simulador</button>
+        <button onclick="showPage('sobre-mim')">Sobre Mim</button>
+        <button onclick="showPage('agrinho')">O Concurso</button>
+    </nav>
+
+    <main id="content">
+        <section id="simulador" class="page active">
+            <h1>Simulador de Estufa de Morango</h1>
+            <p>Ajuste os controles para manter a produção sustentável.</p>
+            
+            <div class="dashboard">
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Temperatura (°C): <span id="temp-val">22</span></label>
+                        <input type="range" id="temp" min="0" max="45" value="22">
+                    </div>
+                    <div class="control-group">
+                        <label>Umidade do Ar (%): <span id="ar-val">70</span></label>
+                        <input type="range" id="ar" min="0" max="100" value="70">
+                    </div>
+                    <div class="control-group">
+                        <label>Umidade do Solo (%): <span id="solo-val">60</span></label>
+                        <input type="range" id="solo" min="0" max="100" value="60">
+                    </div>
+                </div>
+
+                <div class="status-display">
+                    <div id="plant-status">🌱</div>
+                    <p id="feedback">Condições Ideais!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="page">
+            <h1>Sobre Mim</h1>
+            <div class="card">
+                <p>Olá! Sou aluno do 1º ano do Ensino Médio e entusiasta da tecnologia aplicada ao agronegócio.</p>
+                <p>Este projeto foi desenvolvido para demonstrar como a automação pode auxiliar o produtor rural a economizar recursos e aumentar a produtividade com sustentabilidade.</p>
+            </div>
+        </section>
+
+        <section id="agrinho" class="page">
+            <h1>Concurso Agrinho 2026</h1>
+            <p><strong>"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</strong></p>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300?text=Logo+Agrinho+2026" alt="Logo Agrinho">
+                <p>O Agrinho é o maior programa de responsabilidade social do Sistema FAEP, focado em educação e sustentabilidade.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
